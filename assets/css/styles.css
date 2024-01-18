@@ -1,0 +1,719 @@
+.bg-blue{
+    /*background: linear-gradient(to bottom,black,#1362c2, #0f097f,#1362c2,black);*/
+    background: linear-gradient(to bottom,rgba(0,0,0,0.9)0%, rgba(0,0,0,0.2)100%);
+}
+
+.bg-red{
+    color: aliceblue;
+    background-color: #cd3232;
+    border-radius: 30%;
+}
+.bg-red:hover{
+    box-shadow: 0px 0px 10px 2px red;
+}
+
+.titulo-h2,.titulo-h3{
+   /* background: linear-gradient(to bottom,black,#1362c2, #0f097f,#1362c2,black);*/
+   background: linear-gradient(to bottom,rgba(0,0,0,0.9)0%, rgba(0,0,0,0.4)100%);
+    color: #cd3232;
+    font-family: 'Luckiest Guy', cursive;
+    width: 400px;
+    padding: 5px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.btn{
+    border: 4px solid black;
+    color: red;
+}
+.btn:hover{
+    box-shadow: 0 0 10px 5px rgb(199, 24, 24);
+    border: 4px solid black;
+    color: #cd3232;
+}
+
+.btn-font{
+    font-size: 25px;
+}
+.btn-agendamento{
+    text-decoration: none;
+    padding: 13px;
+    border-radius: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: #cd3232;
+    margin-left: 40%;
+    border: 2px solid #cd3232;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.9)0%, rgba(0,0,0,0.4)100%);
+}
+.btn-agendamento:hover {
+    box-shadow: #000 0px 0px 15px 10px;
+    color: #fefefe
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans&display=swap');
+/*font-family: 'Open Sans', sans-serif;  font-family: 'Luckiest Guy', cursive;*/
+
+
+body {
+    background: url(../img/fundo.jpg);
+    /* Adiciona um degradê preto transparente por cima da imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  
+  
+.dupla-img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px;
+    margin-bottom: 40px;
+}
+
+.img-esquerda{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    background-image: url(../img/ferramenta1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: justify;
+}
+
+.img-direita{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    background-image: url(../img/ferramenta2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: justify;
+}
+
+
+.primeira-imagem{
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    background-image: url(../img/salao1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: justify;
+}
+
+.segunda-imagem{
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    background-image: url(../img/salao2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: justify;
+    margin-top: 40px;
+}
+
+
+
+.primeira-imagem,.segunda-imagem{
+    padding-top: 400px;
+}
+
+.texto-principal{
+    margin-top: 100px;
+    margin: 20px;
+    padding: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bolder;
+}
+.texto-principal h1{
+    margin-top: 150px;
+    font-size: 34px;
+    letter-spacing: 1px;
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+    color: #fefefe;
+    margin-bottom: 50px;
+}
+
+
+
+.nav-link{
+    color: rgb(235, 21, 21);
+    font-size: larger;
+    font-weight: bolder;
+}
+.nav-link:hover{
+    color: #000;
+    background-color: #cd3232;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+footer{
+    height: 100px;
+    text-align: center;
+    color: #f0f0f0;
+    margin-top: 420px;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.3)0%, rgba(0,0,0,0.9)100%);
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  th, td {
+    
+    padding: 15px;
+    text-align: left;
+    color: #1362c2;
+    font-size: 20px;
+  }
+
+  th {
+    background-color: #3498db;
+    color: #fff;
+    border: 4px dashed black;
+  }
+
+  td{
+    border: 3px dashed #3498db;
+    background-color: black;
+  }
+
+  h2 {
+    color: #3498db;
+  }
+
+ 
+
+.catalogo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    margin-left: 30%;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.9)0%, rgba(0,0,0,0)100%);
+    width: 640px;
+    height: 800px;
+    border-radius: 30px;
+    border: 2px solid black;
+    box-shadow: 0 0 12px 5px red;
+    text-align: center;
+
+}
+.texto-catalogo{
+    margin-top: 250px;
+    margin-left: 35%;
+    
+}
+.texto-catalogo p{
+    color: #fefefe;
+    font-size: 24px;
+    background: #0f097f;
+    border: 2px solid #1362c2;
+    width: 400px;
+    padding: 5px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.text-preco{
+    color: #fff;
+}
+
+span{
+    color: #3498db;
+}
+
+
+.banner{
+    height: 600px;
+    width: 100%;
+    background-image: url(../img/fundo.banner.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img{
+    filter: drop-shadow( 0 7px 10px blue);
+}
+
+.conteudo-paralax-01{
+    height: 150px;
+    width: 1320px;
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #f0f0f0;
+    position: relative;
+    top: 80px;
+}
+
+.conteudo-paralax-01 h2,.conteudo-paralax-02 h2{
+    font-family: 'Raleway', sans-serif;
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+}
+.conteudo-paralax-01 p, .conteudo-paralax-02 p {
+    font-size: 22px;
+    line-height: 1.5em;
+}
+.conteudo-paralax-02{
+    height: 150px;
+    width: 1320px;
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #f0f0f0;
+    position: relative;
+    top: 80px;
+}
+.alinhamento-cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+.imagem-card img{
+    width: 160px;
+    height: 240px;
+    margin-left: 0;
+    border-radius: 20px;
+}
+.imagem-card{
+    margin-left: -60px;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 240px;
+    width: 400px;
+    background-color: black;
+    margin: 50px;
+    border-radius: 20px;
+    border: 4px double red;
+    animation: scaleAnimation 3.5s infinite;
+}
+
+@keyframes scaleAnimation{
+    0% {transform: scale(1);}
+
+    50% {transform: scale(1.1);}
+
+    100% {transform: scale(1);}
+}
+
+.text-card{
+    color: #fefefe;
+    font-size: 25px;
+    align-self: center;
+}
+
+.titulo-card{
+    font-weight: bold;
+    font-size: 28px;
+    color: red;
+    text-align: center;
+}
+.preco-card{
+    font-size: 25px;
+    color: red;
+    text-align: left;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-gap: 10px;
+  }
+  
+  .photo, .photo img{
+    width: 250px;
+    height: 250px;
+    background-color:  #000; /* Fundo cinza escuro mais escuro */
+  }
+  
+  .container{
+    height: 800px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .depoimentos {
+    background-color: transparent; /* Cor de fundo, ajuste conforme necessÃ¡rio */
+    color: black;
+    text-align: center;
+    padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
+}
+
+.depoimentos h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.depoimentos-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.depoimento {
+    max-width: 400px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo dos depoimentos, ajuste conforme necessÃ¡rio */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.depoimento p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.depoimento .cliente {
+    font-weight: bold;
+}
+
+
+
+.promocoes {
+    background-color: transparent; /* Cor de fundo, ajuste conforme necessÃ¡rio */
+    color: #35424a;
+    text-align: center;
+    padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
+}
+
+.promocoes h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.promocoes p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.promocoes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.promocoes li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.equipe {
+    background-color: transparent; /* Cor de fundo, ajuste conforme necessÃ¡rio */
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
+}
+
+.equipe h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.equipe-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.barbeiro {
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo dos perfis, ajuste conforme necessÃ¡rio */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.barbeiro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.barbeiro h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.barbeiro p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: black;
+}
+.blog {
+    background-color: transparent; /* Cor de fundo, ajuste conforme necessÃ¡rio */
+    color: #35424a;
+    text-align: center;
+    padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
+}
+
+.blog h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.blog-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post {
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f5f5f5; /* Cor de fundo dos posts, ajuste conforme necessÃ¡rio */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.post h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.post a {
+    display: inline-block;
+    text-decoration: none;
+    color:red; /* Cor do link, ajuste conforme necessÃ¡rio */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.post a:hover {
+    color: #35424a; /* Cor de destaque ao passar o mouse */
+}
+
+.redes-sociais {
+    background-color: transparent; /* Cor de fundo, ajuste conforme necessÃ¡rio */
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
+}
+
+.redes-sociais h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.redes-sociais p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.icones-redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+
+.icones-redes-sociais a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.icones-redes-sociais a img {
+    width: 40px; /* Ajuste conforme necessÃ¡rio */
+    height: 40px; /* Ajuste conforme necessÃ¡rio */
+    border-radius: 50%;
+}
+
+.icones-redes-sociais a:hover {
+    transform: scale(1.2); /* Efeito de destaque ao passar o mouse */
+}
+
+.mapa {
+    background-color: transparent; /* Cor de fundo, ajuste conforme necessÃ¡rio */
+    color: #35424a;
+    text-align: center;
+    padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
+}
+
+.mapa h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.mapa p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.mapa iframe {
+    width: 100%;
+    max-width: 600px; /* Ajuste conforme necessÃ¡rio */
+    height: 450px; /* Ajuste conforme necessÃ¡rio */
+    border: 0;
+}
+
+
+.links-rapidos {
+    background-color: #35424a; /* Cor de fundo, ajuste conforme necessÃ¡rio */
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px; /* Ajuste conforme necessÃ¡rio */
+}
+
+.links-rapidos-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.links-rapidos a {
+    margin: 0 15px;
+    font-size: 16px;
+    color: red; /* Cor dos links, ajuste conforme necessÃ¡rio */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links-rapidos a:hover {
+    color: #fff; /* Cor de destaque ao passar o mouse */
+}
+
+
+.faq {
+    background-color: transparent; /* Cor de fundo, ajuste conforme necessÃ¡rio */
+    color: #35424a;
+    text-align: center;
+    padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
+}
+
+.faq h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.faq-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pergunta {
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5; /* Cor de fundo das perguntas, ajuste conforme necessÃ¡rio */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pergunta h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.pergunta p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.newsletter {
+    background-color: transparent; /* Cor de fundo, ajuste conforme necessÃ¡rio */
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
+}
+
+.newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.form-newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-newsletter input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #fff; /* Cor da borda do campo de e-mail, ajuste conforme necessÃ¡rio */
+    border-radius: 5px;
+}
+
+.form-newsletter button {
+    padding: 10px 20px;
+    background-color: red; /* Cor do botÃ£o, ajuste conforme necessÃ¡rio */
+    border: none;
+    border-radius: 5px;
+    color: white; /* Cor do texto no botÃ£o, ajuste conforme necessÃ¡rio */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-newsletter button:hover {
+    background-color: #35424a; /* Cor de destaque ao passar o mouse */
+    color: #fff;
+}
+
+
+
+.fundo-degrade{
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    height: auto;
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    
+}

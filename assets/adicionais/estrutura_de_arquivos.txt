@@ -1,0 +1,36 @@
+- pages/
+    - index.php
+    - about.php
+    - contact.php
+- admin/
+    - index.php
+    - users.php
+    - settings.php
+    - ...
+- user/
+    - index.php
+    - profile.php
+    - settings.php
+    - ...
+- includes/
+    - header.php
+    - footer.php
+    - sidebar.php (se houver um menu lateral comum)
+- assets/
+    - css/
+        - style.css
+        - admin.css (estilos específicos para o painel de administração)
+        - user.css (estilos específicos para a área do usuário)
+    - js/
+        - bootstrap.js
+        - admin.js (scripts específicos para o painel de administração)
+        - user.js (scripts específicos para a área do usuário)
+    - img/
+        - logo.png
+        - background.jpg
+- config/
+    - config.php
+- admin/
+    - ... (arquivos adicionais específicos para o painel de administração)
+- user/
+    - ... (arquivos adicionais específicos para a área do usuário)

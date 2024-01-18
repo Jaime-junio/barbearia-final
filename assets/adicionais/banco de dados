@@ -1,0 +1,94 @@
+//codigo do bd, só copiar e colar
+create database barbearia;
+
+CREATE TABLE clientes (
+    id_cliente INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    nascimento DATE NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    senha VARCHAR(8) NOT NULL
+);
+
+CREATE TABLE barbeiros (
+    id_barbeiro INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    especialidade VARCHAR(100),
+    telefone VARCHAR(20),
+    disponibilidade BOOLEAN DEFAULT true
+);
+
+CREATE TABLE agendamentos (
+    numero INT PRIMARY KEY AUTO_INCREMENT,
+    id_cliente INT,
+    nome_cliente VARCHAR(100) NOT NULL,
+    id_barbeiro INT,
+    nome_barbeiro VARCHAR(100),
+    data DATE NOT NULL,
+    horario TIME NOT NULL,
+    situacao ENUM('pago', 'pendente', 'cancelado') NOT NULL DEFAULT 'pendente',
+    FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente),
+    FOREIGN KEY (id_barbeiro) REFERENCES barbeiros(id_barbeiro)
+);
+
+
+CREATE TABLE SERVICOS(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(1000),
+    preco DECIMAL(50),
+    paragrafo VARCHAR(1000)
+);
+
+CREATE TABLE administradores (
+    id_administrador INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    senha VARCHAR(255) NOT NULL
+);
+
+INSERT INTO administradores (nome, email, senha) VALUES ('Admin', 'admin@example.com', SHA2('12345678', 256)); 
+-- pro php, $senha = password_hash($senha, PASSWORD_DEFAULT); 
+
+-- inserindo nossos barbeiros por padrao
+INSERT INTO barbeiros (nome, email, especialidade, telefone) VALUES ('Gustavo', 'gustavobarbeiro@gmail.com','Pinturas de cabelos e barbas', '(21) 98325-5378');
+INSERT INTO barbeiros (nome, email, especialidade, telefone) VALUES ('Kleber', 'kleberbarbeiro@gmail.com','Cortes com desenhos e detalhes complexos', '(21) 9456-7890');
+INSERT INTO barbeiros (nome, email, especialidade, telefone) VALUES ('Pedro', 'pedrobarbeiro@gmail.com','Cortes Afros', '(21) 98756-9890');
+
+-- nossos servicos por padrao
+INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Corte de Cabelo", 30.00, "Corte moderno e estilizado.");
+INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Corte de Cabelo e Barba", 40.00, "Combo completo.");
+INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Barba", 20.00, "Barba modelada e finalizada.");
+INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Sobrancelha", 15.00, "Design e limpeza.");
+INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Bigode", 10.00, "Modelagem do bigode.");
+INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Pintura de Cabelo", 50.00, "Coloração moderna.");
+INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Pintura de Barba", 30.00, "Destaque para a barba.");
+INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Dia do Noivo", 80.00, "Atendimento personalizado.")
+
+
+
+--para visualizar melhor:
+SELECT 
+    clientes.id_cliente, 
+    clientes.nome, 
+    clientes.email, 
+    clientes.telefone, 
+    agendamentos.numero, 
+    agendamentos.data, 
+    agendamentos.horario,
+    barbeiros.nome AS nome_barbeiro,
+    barbeiros.especialidade AS especialidade_barbeiro
+FROM clientes
+INNER JOIN agendamentos ON clientes.id_cliente = agendamentos.id_cliente
+INNER JOIN barbeiros ON agendamentos.id_barbeiro = barbeiros.id_barbeiro;
+
+
+-- ADICIONANDO O CAMPO FOTO NO BARBEIRO (vai receber o caminho pra imagem)
+ALTER TABLE barbeiros
+ADD foto VARCHAR(255); -- Defina o tamanho apropriado para o caminho da foto
+
+UPDATE barbeiros SET foto = 'gustavo.jpg' WHERE nome = 'Gustavo';
+UPDATE barbeiros SET foto = 'kleber.jpg' WHERE nome = 'Kleber';
+UPDATE barbeiros SET foto = 'pedro.jpg' WHERE nome = 'Pedro';
+
+-- fazer confirmação de email antes de adicionar ao bd... só falta incrementar isso e criar as paginas de adm e user

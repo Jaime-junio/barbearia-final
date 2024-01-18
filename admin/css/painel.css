@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #ffdead;
+    color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.central{
+    display: flex;
+    flex-direction: row;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 60px;
+    padding-top: 30px;
+    color: red;
+    background: black;
+    text-shadow: 0px 0px 4px black;
+}
+.header a{
+    text-decoration: none;
+    color: red;
+    font-size: 22px;
+    text-shadow: 0px 0px 4px black;
+}
+
+.header a:hover{
+    color: white;
+    font-size: 24px;
+}
+
+.lista-barbeiros{
+    border: 2px solid black;
+    width: 1200px;
+    height: auto;
+    color: black;
+    margin-top: 60px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 12px 9px #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.editar-barbeiro{
+    font-size: 28px;
+    flex-direction: column;
+    justify-content: left;
+    height: 600px;
+    width: 800px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 12px 9px #000000;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 4%;
+    color: #000000;
+}
+
+/* raphael mexeu aqui e na largura do .editar-barbeiro tambem*/
+.e2{
+    width: 2000px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 20px;
+}
+td {background-color: #f2f2f2;}
+
+table{margin-top: 50px; border-collapse: collapse; width: 100%;}
+
+th, td {
+    border: 1px solid #000; /* borda para todas as células */
+    padding: 8px; 
+    text-align: left; 
+}
+
+/* fim  */
+
+
+
+.adicionar-barbeiro, .login{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 200px;
+    width: 400px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 12px 9px #000000;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 4%;
+    color: #000000;
+    font-size: 35px;
+}
+
+.lista-barbeiros p, h4{
+    margin: 10px;
+}
+
+.lista-barbeiros a{
+    text-decoration: none;
+    color: red;
+    padding: 5px;
+}
+
+.lista-barbeiros a:hover{
+    background-color: #000000;
+    color: white;
+    border-radius: 30px;
+}
+
+.adicionar-barbeiro label{
+    font-size: 28px;
+}
+
+.adicionar-barbeiro input{
+    font-size: 18px;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+.login input{
+    padding: 6px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+.editar-barbeiro input{
+    padding: 4px;
+    margin: 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+.btn{
+    padding: 8px;
+    margin-left: 40%;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn:hover{
+    background-color: black;
+    color: aliceblue;
+    box-shadow: 0 0 12px 8px black;
+    border: 3px solid #ffdead;
+}
+
+.alinhamento{
+    margin-left:220px ;
+}
