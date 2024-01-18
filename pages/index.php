@@ -1,10 +1,11 @@
+<div class="fundo-degrade">
 <?php
 
 include '../includes/header.php';
 
 ?>
 <link rel="stylesheet" href="../assets/css/styles.css">
-<div class="fundo-degrade">
+
 <main>
   <section class="texto-principal">
     <h1> Bem vindo(a) á Hair's Beautiful</h1>
@@ -163,38 +164,9 @@ include '../includes/header.php';
       </form>
   </div>
 </section>
-
-<div class="texto-do-sobre">
-    <h2 class="titulo-h2" style="margin-left: 35%;">Sobre nossa Franquia</h2>
-    <p> Bem-vindo ao Hair's Beautiful, o refúgio da elegância masculina em Nova Iguaçu, onde a arte do barbear é elevada
-        a uma experiência única. Sob a orientação habilidosa do proprietário Eduardo, nossa barbearia é mais do que um
-        salão de beleza - é um santuário para homens que buscam cuidado pessoal excepcional e um toque de sofisticação.
-
-        Ao entrar no Hair's Beautiful, você será envolvido por uma atmosfera acolhedora e contemporânea, onde a tradição
-        encontra a modernidade. Nossa equipe de barbeiros especializados está comprometida em proporcionar um serviço
-        impecável, garantindo que cada cliente saia não apenas com uma barba perfeita, mas também com a confiança
-        renovada.</p>
-
-    <p>O espaço foi cuidadosamente projetado para oferecer um ambiente relaxante, onde os homens podem escapar da
-        agitação diária e dedicar algum tempo exclusivo a si mesmos. Do design interior elegante aos assentos
-        confortáveis, cada detalhe foi pensado para criar uma experiência única de barbearia.
-
-        Eduardo, o talentoso proprietário e mestre barbeiro, lidera nossa equipe com paixão e habilidade. Com anos de
-        experiência na indústria, ele é conhecido por sua destreza artística e compromisso com a satisfação do cliente.
-        Cada corte de cabelo e barba é tratado como uma obra-prima única, adaptada às necessidades e estilo de cada
-        cliente.</p>
-
-    <p>Além dos cortes tradicionais e barbas impecáveis, no Hair's Beautiful também oferecemos uma variedade de
-        tratamentos especiais, como massagens capilares revigorantes e tratamentos de hidratação para manter seu visual
-        sempre impecável.
-
-        Junte-se a nós no Hair's Beautiful e descubra a verdadeira arte do barbear. Agende sua visita hoje para
-        experimentar a excelência em cuidados pessoais masculinos em Nova Iguaçu. Estamos ansiosos para recebê-lo em
-        nosso santuário de estilo e elegância.</p>
-</div>
-
 </main>
-</div>
+
 <?php
 include '../includes/footer.php';
 ?>
+</div>

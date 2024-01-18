@@ -708,6 +708,240 @@ span{
 
 
 
+
+
+
+
+
+
+/* configuraçao da pagina sobre*/
+
+
+.historia {
+    background-color: transparent; /* Cor de fundo, ajuste conforme necessÃ¡rio */
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
+}
+
+.historia h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.historia-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.historia p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.missao-valores {
+    background-color: transparent; /* Cor de fundo, ajuste conforme necessÃ¡rio */
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
+}
+
+.missao-valores h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.missao-valores-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.missao-valores p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.missao-valores strong {
+    color: red; /* Cor para destacar o texto forte (strong), ajuste conforme necessÃ¡rio */
+}
+
+.equipe-sobre {
+    background-color: transparent; /* Cor de fundo, ajuste conforme necessÃ¡rio */
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
+}
+
+.equipe-sobre h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.equipe-sobre-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.membro-equipe {
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Cor de fundo dos perfis, ajuste conforme necessÃ¡rio */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.membro-equipe img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.membro-equipe h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.membro-equipe p {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.fotos-ambiente {
+    background-color: transparent; /* Cor de fundo, ajuste conforme necessÃ¡rio */
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
+}
+.fotos-ambiente h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.fotos-ambiente-content {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.galeria-fotos {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+.galeria-fotos img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filosofia-atendimento {
+    background-color: transparent; /* Cor de fundo, ajuste conforme necessÃ¡rio */
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
+}
+
+.filosofia-atendimento h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.filosofia-atendimento-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.filosofia-atendimento p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+
+.atualizacoes-novidades {
+    background-color: transparent; /* Cor de fundo, ajuste conforme necessÃ¡rio */
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
+}
+
+.atualizacoes-novidades h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.atualizacoes-novidades-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.atualizacoes-novidades p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.atualizacoes-novidades a {
+    color: red; /* Cor dos links, ajuste conforme necessÃ¡rio */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.atualizacoes-novidades a:hover {
+    color: #fff; /* Cor de destaque ao passar o mouse */
+}
+
+
+
+
+
+.depoimentos {
+    background-color: transparent; /* Cor de fundo, ajuste conforme necessÃ¡rio */
+    color: black;
+    text-align: center;
+    padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
+}
+
+.depoimentos h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.depoimentos-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.depoimento {
+    max-width: 400px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo dos depoimentos, ajuste conforme necessÃ¡rio */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.depoimento p {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.depoimento .cliente {
+    font-weight: bold;
+}
+
+
 .fundo-degrade{
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(5px);
@@ -717,3 +951,145 @@ span{
     margin-bottom: -20px;
     
 }
+
+
+/* configuraçoes da pagina serviços*/
+
+
+.services-section {
+    background-color: transparent; /* Cinza claro ou branco para o fundo */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  
+  .service-card {
+    background-color: rgba(0, 0, 0, 0.6); /* Branco para o card */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sutil sombra para efeito tridimensional */
+    text-align: center;
+  }
+  
+  .service-card img {
+    height: 160px;
+    width: 180px; /* Tamanho do Ã­cone */
+    margin-bottom: 15px;
+  }
+  
+  .service-card h2 {
+    color: red; /* Azul escuro para o tÃ­tulo */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    color: #fff; /* Tons escuros de azul ou preto para a descriÃ§Ã£o */
+    font-size: 1.1em;
+    line-height: 1.4;
+  }
+  
+  
+  .portfolio-section {
+    background-color: transparent; /* Branco para o fundo */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .portfolio-gallery {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+    align-items: center;
+  }
+  
+  .portfolio-gallery img {
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sutil sombra para efeito tridimensional */
+    margin: 40px;
+    transition: 400ms;
+  }
+
+  .portfolio-gallery img:hover{
+    transform: scale(1.6);
+  }
+  
+  .testimonials-section {
+    background-color: transparent; /* Marrom ou cinza claro para o fundo */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .testimonial-card {
+    background-color: rgba(0, 0, 0, 0.6); /* Branco para o card */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sutil sombra para efeito tridimensional */
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-card img {
+    width: 80px; /* Tamanho da foto do cliente */
+    height: 80px;
+    object-fit: cover; /* Garante que a foto mantenha proporÃ§Ãµes e recorte uniforme */
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-text {
+    color: #fff; /* Branco para o texto do depoimento */
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+  
+  .client-name {
+    color: red; /* Tons escuros de azul ou preto para o nome do cliente */
+    font-weight: bold;
+  }
+  
+  .booking-section {
+    background-color: rgba(0, 0, 0, 0.8); /* Azul escuro ou marrom para o fundo */
+    color: red; /* Branco para o texto */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .booking-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .booking-form label {
+    display: block;
+    margin-top: 15px;
+  }
+  
+  .booking-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid red; /* Tons neutros para o formulÃ¡rio */
+    border-radius: 5px;
+  }
+  
+  .btn-blue {
+    background-color: red; /* Azul intenso para o botÃ£o */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 300ms;
+  }
+  
+  .btn-blue:hover{
+    background-color: rgb(58, 13, 13);
+    color: #ffffff;
+    transform: scale(1.3);
+  }
