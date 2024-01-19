@@ -90,11 +90,11 @@
             
             <div class="depoimento">
                 <p>"Excelente atendimento e profissionais qualificados. Sempre saio satisfeito!"</p>
-                <p>- Cliente Satisfeito 1</p>
+                <p style="color: red;">- Cliente Satisfeito 1</p>
             </div>
             <div class="depoimento">
                 <p>"Ambiente agradável e cortes modernos. Recomendo!"</p>
-                <p>- Cliente Satisfeito 2</p>
+                <p style="color: red;">- Cliente Satisfeito 2</p>
             </div>
             <!-- Adicione mais depoimentos conforme necessÃ¡rio -->
         </div>

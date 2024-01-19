@@ -154,12 +154,14 @@ body {
     color: rgb(235, 21, 21);
     font-size: larger;
     font-weight: bolder;
+    transition: 400ms;
 }
 .nav-link:hover{
-    color: #000;
-    background-color: #cd3232;
-    border-radius: 50%;
+    color: #fff;
+    background-color: #4a0f0f;
+    border-radius: 10%;
     text-align: center;
+    transform: scale(1.2);
 }
 
 
@@ -168,7 +170,8 @@ footer{
     text-align: center;
     color: #f0f0f0;
     margin-top: 420px;
-    background: linear-gradient(to bottom,rgba(0,0,0,0.3)0%, rgba(0,0,0,0.9)100%);
+    background: linear-gradient(to bottom,rgba(0,0,0,0.9)0%, rgba(0,0,0,0.9)100%);
+    margin-bottom: -50px;
 
 }
 
@@ -292,72 +295,26 @@ span{
     position: relative;
     top: 80px;
 }
-.alinhamento-cards{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    
-}
-.imagem-card img{
-    width: 160px;
-    height: 240px;
-    margin-left: 0;
-    border-radius: 20px;
-}
-.imagem-card{
-    margin-left: -60px;
-}
-
-.card{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: 240px;
-    width: 400px;
-    background-color: black;
-    margin: 50px;
-    border-radius: 20px;
-    border: 4px double red;
-    animation: scaleAnimation 3.5s infinite;
-}
-
-@keyframes scaleAnimation{
-    0% {transform: scale(1);}
-
-    50% {transform: scale(1.1);}
-
-    100% {transform: scale(1);}
-}
-
-.text-card{
-    color: #fefefe;
-    font-size: 25px;
-    align-self: center;
-}
-
-.titulo-card{
-    font-weight: bold;
-    font-size: 28px;
-    color: red;
-    text-align: center;
-}
-.preco-card{
-    font-size: 25px;
-    color: red;
-    text-align: left;
-}
 
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 300px);
-    grid-gap: 10px;
+    grid-gap: 45px;
   }
   
   .photo, .photo img{
     width: 250px;
     height: 250px;
-    background-color:  #000; /* Fundo cinza escuro mais escuro */
+    background-color:  #000;
+    border: 2px solid black; /* Fundo cinza escuro mais escuro */
+    transition: 400ms;
+  }
+
+  .photo img:hover{
+    transform: scale(1.2);
+    box-shadow: 6px 6px 10px red;
+    border:0px double transparent ;
+    border-radius: 20%;
   }
   
   .container{
@@ -371,8 +328,8 @@ span{
   
 
   .depoimentos {
-    background-color: transparent; /* Cor de fundo, ajuste conforme necessÃ¡rio */
-    color: black;
+    background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo, ajuste conforme necessÃ¡rio */
+    color: white;
     text-align: center;
     padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
 }
@@ -392,9 +349,10 @@ span{
     max-width: 400px;
     margin: 10px;
     padding: 20px;
-    background-color: #fff; /* Cor de fundo dos depoimentos, ajuste conforme necessÃ¡rio */
+    background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo dos depoimentos, ajuste conforme necessÃ¡rio */
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(241, 19, 19, 0.1);
+    color: #fff;
 }
 
 .depoimento p {
@@ -457,9 +415,10 @@ span{
     max-width: 300px;
     margin: 10px;
     padding: 20px;
-    background-color: #fff; /* Cor de fundo dos perfis, ajuste conforme necessÃ¡rio */
+    background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo dos perfis, ajuste conforme necessÃ¡rio */
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #f0f0f0;
 }
 
 .barbeiro img {
@@ -471,17 +430,17 @@ span{
 .barbeiro h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: black;
+    color: red;
 }
 
 .barbeiro p {
     font-size: 16px;
     margin-bottom: 10px;
-    color: black;
+    color: white;
 }
 .blog {
     background-color: transparent; /* Cor de fundo, ajuste conforme necessÃ¡rio */
-    color: #35424a;
+    color: white;
     text-align: center;
     padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
 }
@@ -501,9 +460,10 @@ span{
     max-width: 300px;
     margin: 10px;
     padding: 20px;
-    background-color: #f5f5f5; /* Cor de fundo dos posts, ajuste conforme necessÃ¡rio */
+    background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo dos posts, ajuste conforme necessÃ¡rio */
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
 .post img {
@@ -528,11 +488,15 @@ span{
     text-decoration: none;
     color:red; /* Cor do link, ajuste conforme necessÃ¡rio */
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: 400ms;
 }
 
 .post a:hover {
-    color: #35424a; /* Cor de destaque ao passar o mouse */
+    color: #fff;
+    transform: scale(1.1);
+    background-color: #4a0f0f; /* Cor de destaque ao passar o mouse */
+    padding: 8px;
+    border-radius: 50%;
 }
 
 .redes-sociais {
@@ -625,7 +589,7 @@ span{
 
 .faq {
     background-color: transparent; /* Cor de fundo, ajuste conforme necessÃ¡rio */
-    color: #35424a;
+    color: white;
     text-align: center;
     padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
 }
@@ -645,14 +609,16 @@ span{
     max-width: 600px;
     margin: 20px;
     padding: 20px;
-    background-color: #f5f5f5; /* Cor de fundo das perguntas, ajuste conforme necessÃ¡rio */
+    background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo das perguntas, ajuste conforme necessÃ¡rio */
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
 }
 
 .pergunta h3 {
     font-size: 18px;
     margin-bottom: 10px;
+    color: red;
 }
 
 .pergunta p {
@@ -665,6 +631,7 @@ span{
     color: #fff;
     text-align: center;
     padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
+    margin-bottom: -400px;
 }
 
 .newsletter h2 {
@@ -685,9 +652,11 @@ span{
 
 .form-newsletter input {
     padding: 10px;
-    margin-right: 10px;
+    margin-right: 50px;
+    margin-top: 20px;
     border: 1px solid #fff; /* Cor da borda do campo de e-mail, ajuste conforme necessÃ¡rio */
     border-radius: 5px;
+    width: 800px;
 }
 
 .form-newsletter button {
@@ -698,12 +667,13 @@ span{
     color: white; /* Cor do texto no botÃ£o, ajuste conforme necessÃ¡rio */
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 400ms;
 }
 
 .form-newsletter button:hover {
-    background-color: #35424a; /* Cor de destaque ao passar o mouse */
+    background-color: rgb(96, 17, 17); /* Cor de destaque ao passar o mouse */
     color: #fff;
+    transform: scale(1.2);
 }
 
 
@@ -722,6 +692,7 @@ span{
     color: #fff;
     text-align: center;
     padding: 30px 20px; /* Ajuste conforme necessÃ¡rio */
+    padding-top: 300px;
 }
 
 .historia h2 {
@@ -837,9 +808,13 @@ span{
 .galeria-fotos img {
     max-width: 100%;
     height: auto;
-    margin: 10px;
+    margin: 40px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 500ms;
+}
+.galeria-fotos img:hover{
+    transform: scale(1.2);
 }
 
 .filosofia-atendimento {
@@ -926,10 +901,10 @@ span{
     max-width: 400px;
     margin: 10px;
     padding: 20px;
-    background-color: #fff; /* Cor de fundo dos depoimentos, ajuste conforme necessÃ¡rio */
+    background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo dos depoimentos, ajuste conforme necessÃ¡rio */
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: black;
+    color: white;
 }
 
 .depoimento p {
@@ -962,6 +937,8 @@ span{
     display: flex;
     justify-content: space-around;
     align-items: stretch;
+    padding-top: 200px;
+    padding-left: 40px;
   }
   
   .service-card {
@@ -970,6 +947,8 @@ span{
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sutil sombra para efeito tridimensional */
     text-align: center;
+    width: 350px;
+    margin: 40px;
   }
   
   .service-card img {
@@ -1015,7 +994,7 @@ span{
   }
 
   .portfolio-gallery img:hover{
-    transform: scale(1.6);
+    transform: scale(1.2);
   }
   
   .testimonials-section {
@@ -1056,6 +1035,7 @@ span{
     color: red; /* Branco para o texto */
     padding: 40px 20px;
     text-align: center;
+    margin-bottom: -400px;
   }
   
   .booking-form {

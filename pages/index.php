@@ -13,7 +13,42 @@ include '../includes/header.php';
     <p> A melhor Franquia do Município de Nova Iguaçu,
       explore o nosso site e veja um pouco mais do nosso trabalho</p>
 
-      <h2 style="color: red;">Nossa Galeria de trabalhos</h2>
+      <section class="promocoes">
+  <div class="promocoes-content">
+      <h2 style="color: red;">Promosões Especiais</h2>
+      <p style="color: white;">Aproveite nossas ofertas exclusivas para você:</p>
+      <ul>
+          <li style="color: white;">Desconto de 20% no corte na primeira visita</li>
+          <li style="color: white;">Promoção de barba + corte por apenas R$ 50,00</li>
+          <!-- Adicione mais promoÃ§Ãµes conforme necessÃ¡rio -->
+      </ul>
+  </div>
+</section>
+<!-- Adicione esta seÃ§Ã£o apÃ³s o fechamento da tag </section> das promoÃ§Ãµes -->
+<h2 style="color: red;">Nossa Equipe</h2>
+<section class="equipe">
+  <div class="equipe-content">
+      
+      <div class="barbeiro">
+          <img src="../assets/img/kleber.jpg" alt="Barbeiro 1">
+          <h3>Kleber Silva</h3>
+          <p>Com mais de 10 anos de experiência, especializado em cortes modernos e barbas estilizadas.</p>
+      </div>
+      <div class="barbeiro">
+          <img src="../assets/img/pedro.jpg" alt="Barbeiro 2">
+          <h3>Pedro Oliveira</h3>
+          <p>Com habilidades excepcionais em cortes femininos e masculinos, proporcionando resultados Unicos.</p>
+      </div>
+      <div class="barbeiro">
+          <img src="../assets/img/gustavo.jpg" alt="Barbeiro 2">
+          <h3>Gustavo Freitas</h3>
+          <p>Gustavo é especializado em costes afros,com mais de 7 anos de experiência.</p>
+      </div>
+      <!-- Adicione mais barbeiros conforme necessÃ¡rio -->
+  </div>
+</section>
+
+      <h2 style="color: red; margin-bottom: 60px;">Nossa Galeria de trabalhos</h2>
  <div class="container" id="galeria">
   
   <div class="gallery">
@@ -48,50 +83,22 @@ include '../includes/header.php';
   </div>
 
   <h2 style="color: red;">Depoimentos</h2>
-<section class="depoimentos">
+<section  class="depoimentos">
     <div class="depoimentos-content">
         
-        <div class="depoimento">
-            <p>"Excelente atendimento e cortes impecáveis. Recomendo!"</p>
-            <p class="cliente">- Joâo Silva</p>
+        <div style="background:rgba(0, 0, 0, 0.6) ;" class="depoimento">
+            <p style="color: #fff ;">"Excelente atendimento e cortes impecáveis. Recomendo!"</p>
+            <p style="color: red;" class="cliente">- Joâo Silva</p>
         </div>
-        <div class="depoimento">
-            <p>"A melhor barbearia da região. Sempre saio satisfeito!"</p>
-            <p class="cliente">- Maria Oliveira</p>
+        <div style="background:rgba(0, 0, 0, 0.6) ;"  class="depoimento">
+            <p style="color: #fff ;">"A melhor barbearia da região. Sempre saio satisfeito!"</p>
+            <p style="color: red;" class="cliente">- Maria Oliveira</p>
         </div>
         <!-- Adicione mais depoimentos conforme necessÃ¡rio -->
     </div>
 </section>
 
-<section class="promocoes">
-  <div class="promocoes-content">
-      <h2 style="color: red;">Promosões Especiais</h2>
-      <p style="color: white;">Aproveite nossas ofertas exclusivas para você:</p>
-      <ul>
-          <li style="color: white;">Desconto de 20% no corte na primeira visita</li>
-          <li style="color: white;">Promoção de barba + corte por apenas R$ 50,00</li>
-          <!-- Adicione mais promoÃ§Ãµes conforme necessÃ¡rio -->
-      </ul>
-  </div>
-</section>
-<!-- Adicione esta seÃ§Ã£o apÃ³s o fechamento da tag </section> das promoÃ§Ãµes -->
-<h2 style="color: red;">Nossa Equipe</h2>
-<section class="equipe">
-  <div class="equipe-content">
-      
-      <div class="barbeiro">
-          <img src="../assets/img/kleber.jpg" alt="Barbeiro 1">
-          <h3>Kleber Silva</h3>
-          <p>Com mais de 10 anos de experiência, especializado em cortes modernos e barbas estilizadas.</p>
-      </div>
-      <div class="barbeiro">
-          <img src="../assets/img/pedro.jpg" alt="Barbeiro 2">
-          <h3>Pedro Oliveira</h3>
-          <p>Com habilidades excepcionais em cortes femininos e masculinos, proporcionando resultados Unicos.</p>
-      </div>
-      <!-- Adicione mais barbeiros conforme necessÃ¡rio -->
-  </div>
-</section>
+
 <!-- Adicione esta seÃ§Ã£o apÃ³s o fechamento da tag </section> da equipe -->
 <h2 style="color: red;">Blog e Dicas</h2>
 <section class="blog" id="blog">
