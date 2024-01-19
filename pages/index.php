@@ -126,8 +126,8 @@ include '../includes/header.php';
       <h2 style="color: red;">Siga-nos nas Redes Sociais</h2>
       <p>Fique por dentro das Ultimas novidades e inspirações:</p>
       <div class="icones-redes-sociais">
-          <a href="https://www.facebook.com/suabarbearia" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-          <a href="https://www.instagram.com/suabarbearia" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+          <a href="https://www.facebook.com/Jaime/" target="_blank"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt=""></a>
+          <a href=" https://www.instagram.com/SEUUSERNAME/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt=""></a>
           <!-- Adicione mais Ã­cones conforme necessÃ¡rio -->
       </div>
   </div>
@@ -139,7 +139,7 @@ include '../includes/header.php';
       <h2 style="color: red;">Localização</h2>
       <p style="color: white;">Venha nos visitar!</p>
       <!-- Substitua a URL incorporada pelo seu cÃ³digo de incorporaÃ§Ã£o do Google Maps -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1dYOUR_LATITUDE_LONGITUDE!2dYOUR_LONGITUDE!2dYOUR_LATITUDE!3d16.8522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTYuMDIuMDIuMTM0LjEzMyI!5e0!3m2!1sen!2sus!4vYOUR_MAP_API_KEY" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1767.699026046523!2d-43.46520061964896!3d-22.761171750111934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9967f809a644a3%3A0x9c3ec3d5526e1803!2sShopping%20Nova%20Igua%C3%A7u!5e1!3m2!1spt-BR!2sbr!4v1705677023136!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </section>
 <!-- Adicione esta seÃ§Ã£o apÃ³s a seÃ§Ã£o de links rÃ¡pidos ou no final da pÃ¡gina -->
