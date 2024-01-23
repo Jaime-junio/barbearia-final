@@ -1,0 +1,79 @@
+create database barbearia;
+
+use barbearia;
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+	senha VARCHAR(255) NOT NULL,
+    nivel enum('administrador', 'barbeiro')
+);
+
+CREATE TABLE barbeiros (
+    id_barbeiro INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT,
+    especialidade VARCHAR(100),
+    disponibilidade BOOLEAN DEFAULT true,
+    foto VARCHAR(255),
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
+);
+
+-- inserindo usuario em barbeiros 
+INSERT INTO usuarios (nome, email, senha, nivel) VALUES ('Gustavo', 'gustavobarbeiro@gmail.com', SHA2('12345678', 256), 'barbeiro');
+INSERT INTO barbeiros (id_usuario, especialidade, foto) VALUES (1, 'Pinturas de cabelos e barbas', 'gustavo.jpg');
+
+INSERT INTO usuarios (nome, email, senha, nivel) VALUES ('Kleber', 'kleberbarbeiro@gmail.com', SHA2('12345678', 256), 'barbeiro');
+INSERT INTO barbeiros (id_usuario, especialidade, foto) VALUES (2, 'Cortes com desenhos e detalhes complexos', 'kleber.jpg');
+
+INSERT INTO usuarios (nome, email, senha, nivel) VALUES ('Pedro', 'pedrobarbeiro@gmail.com', SHA2('12345678', 256), 'barbeiro');
+INSERT INTO barbeiros (id_usuario, especialidade, foto) VALUES (3, 'Cortes Afros', 'pedro.jpg');
+
+
+-- inserindo adm
+CREATE TABLE administradores (
+    id_administrador INT PRIMARY KEY AUTO_INCREMENT,
+    id_usuario INT,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
+);
+
+INSERT INTO usuarios (nome, email, senha, nivel) VALUES ('Admin', 'admin@example.com', SHA2('12345678', 256), 'administrador'); 
+
+CREATE TABLE SERVICOS(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(1000),
+    preco DECIMAL(50),
+    paragrafo VARCHAR(1000),
+    foto VARCHAR(255)
+);
+
+-- nossos servicos por padrao
+INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Corte de Cabelo", 30.00, "Corte moderno e estilizado.");
+INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Corte de Cabelo e Barba", 40.00, "Combo completo.");
+INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Barba", 20.00, "Barba modelada e finalizada.");
+INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Sobrancelha", 15.00, "Design e limpeza.");
+INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Bigode", 10.00, "Modelagem do bigode.");
+INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Pintura de Cabelo", 50.00, "Coloração moderna.");
+INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Pintura de Barba", 30.00, "Destaque para a barba.");
+INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Dia do Noivo", 80.00, "Atendimento personalizado.");
+
+
+CREATE TABLE posts(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(1000),
+    paragrafo TEXT,
+    linha TEXT,
+    tipo ENUM ('postagem', 'promocao', 'outracoisa')
+);
+
+CREATE TABLE agendamentos (
+    numero INT PRIMARY KEY AUTO_INCREMENT,
+    nome_cliente VARCHAR(100) NOT NULL,
+    id_barbeiro INT,
+    nome_barbeiro VARCHAR(100),
+    data DATE NOT NULL,
+    horario TIME NOT NULL,
+    situacao ENUM('pago', 'pendente', 'cancelado') NOT NULL DEFAULT 'pendente',
+    FOREIGN KEY (id_barbeiro) REFERENCES barbeiros(id_barbeiro)
+);
+---------------------------------------------------------------------------------------------
