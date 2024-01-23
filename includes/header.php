@@ -1,12 +1,5 @@
 <?php
-include '../config/connectNew.php';
 
-$connection = connectNew();
-
-
-$sql = "SELECT nome FROM barbeiros where disponibilidade = 1";
-$result = $connection->query($sql);
-$connection->close();
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +19,8 @@ $connection->close();
     <nav style="position: fixed; width: 100%;top: 0%; color: aliceblue;" class="navbar bg-blue navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"> <img src="../assets/img/logo.png" style="width: 150px; border-radius: 50%; height: 130px;"></a>
-        <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon btn-font"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,7 +44,7 @@ $connection->close();
   </header>
   
 <div id="loginForm" style="display:none;">
-<form method="post" action="../config/autenticar_login.php">
+<form method="post" action="#>
         <!-- Seu formulário de login aqui -->
         <label for="email">Email:</label>
         <input type="email" id="email" name="email">

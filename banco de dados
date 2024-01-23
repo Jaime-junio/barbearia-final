@@ -75,3 +75,20 @@ INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Bigode", 10.00, "Modela
 INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Pintura de Cabelo", 50.00, "Coloração moderna.");
 INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Pintura de Barba", 30.00, "Destaque para a barba.");
 INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Dia do Noivo", 80.00, "Atendimento personalizado.");
+
+
+-- imagens do site
+
+-- index
+-- barbeiros 
+-- galeria de trabalhos
+-- blogs e dicas usando galerias de trabalhos
+
+-- servicos
+-- cortes fotos
+-- portfolio
+-- testemunhos
+
+-- sobre
+-- barbeiros de novo
+-- nossos ambientes

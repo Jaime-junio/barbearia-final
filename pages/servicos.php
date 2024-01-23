@@ -24,7 +24,6 @@ include '../includes/header.php';
     <p>Cuide da sua barba com os melhores produtos e técnicas, garantindo um visual impecável.</p>
   </div>
 
-  <!-- Adicione mais cards conforme necessário para outros serviços -->
 </section>
 <section class="portfolio-section">
   <h2 style="color: red;">Portfólio</h2>
@@ -34,7 +33,6 @@ include '../includes/header.php';
   <img src="../assets/img/corte 6.jpg" alt="Corte de Cabelo 1">
     <img src="../assets/img/corte 7.jpg" alt="Corte de Cabelo 2">
     <img src="../assets/img/corte 8.jpg" alt="Corte de Cabelo 3">
-    <!-- Adicione mais imagens conforme necessário -->
   </div>
 </section>
 
@@ -54,7 +52,6 @@ include '../includes/header.php';
     <p class="testimonial-text">"Atendimento de alta qualidade. Sempre saio satisfeito com o cuidado e profissionalismo."</p>
     <p class="client-name">- André Oliveira</p>
   </div>
-  <!-- Adicione mais testemunhos conforme necessário -->
 </section>
 <section class="booking-section" id="agendamento">
   <h2 style="color: red; font-size: 30px;">Agende um Horário</h2>

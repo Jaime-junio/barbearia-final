@@ -22,11 +22,10 @@ include '../includes/header.php';
         <!-- Deixar dinâmico -->
           <li style="color: white;">Desconto de 20% no corte na primeira visita</li>
           <li style="color: white;">Promoção de barba + corte por apenas R$ 50,00</li>
-          <!-- Adicione mais promoÃ§Ãµes conforme necessÃ¡rio -->
       </ul>
   </div>
 </section>
-<!-- Adicione esta seÃ§Ã£o apÃ³s o fechamento da tag </section> das promoÃ§Ãµes -->
+
 <h2 style="color: red;">Nossa Equipe</h2>
 <section class="equipe">
   <div class="equipe-content">
@@ -43,12 +42,12 @@ include '../includes/header.php';
           <h3>Pedro Oliveira</h3>
           <p>Com habilidades excepcionais em cortes femininos e masculinos, proporcionando resultados Unicos.</p>
       </div>
+
       <div class="barbeiro">
           <img src="../assets/img/gustavo.jpg" alt="Barbeiro 2">
           <h3>Gustavo Freitas</h3>
           <p>Gustavo é especializado em costes afros,com mais de 7 anos de experiência.</p>
       </div>
-      <!-- Adicione mais barbeiros conforme necessÃ¡rio -->
   </div>
 </section>
 
@@ -101,12 +100,10 @@ include '../includes/header.php';
             <p style="color: #fff ;">"A melhor barbearia da região. Sempre saio satisfeito!"</p>
             <p style="color: red;" class="cliente">- Maria Oliveira</p>
         </div>
-        <!-- Adicione mais depoimentos conforme necessÃ¡rio -->
     </div>
 </section>
 
 
-<!-- Adicione esta seÃ§Ã£o apÃ³s o fechamento da tag </section> da equipe -->
 <h2 style="color: red;">Blog e Dicas</h2>
 <section class="blog" id="blog">
   <div class="blog-content">
@@ -129,7 +126,6 @@ include '../includes/header.php';
       <!-- Adicione mais posts conforme necessÃ¡rio -->
   </div>
 </section>
-<!-- Adicione esta seÃ§Ã£o apÃ³s o fechamento da tag </section> do blog -->
 
 <section class="redes-sociais" id="redes-sociais">
   <div class="redes-sociais-content">
@@ -138,21 +134,17 @@ include '../includes/header.php';
       <div class="icones-redes-sociais">
           <a href="https://www.facebook.com/Jaime/" target="_blank"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt=""></a>
           <a href=" https://www.instagram.com/SEUUSERNAME/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt=""></a>
-          <!-- Adicione mais Ã­cones conforme necessÃ¡rio -->
       </div>
   </div>
 </section>
-<!-- Adicione esta seÃ§Ã£o apÃ³s o fechamento da tag </section> das redes sociais -->
 
 <section class="mapa" id="mapa">
   <div class="mapa-content">
       <h2 style="color: red;">Localização</h2>
       <p style="color: white;">Venha nos visitar!</p>
-      <!-- Substitua a URL incorporada pelo seu cÃ³digo de incorporaÃ§Ã£o do Google Maps -->
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1767.699026046523!2d-43.46520061964896!3d-22.761171750111934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9967f809a644a3%3A0x9c3ec3d5526e1803!2sShopping%20Nova%20Igua%C3%A7u!5e1!3m2!1spt-BR!2sbr!4v1705677023136!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </section>
-<!-- Adicione esta seÃ§Ã£o apÃ³s a seÃ§Ã£o de links rÃ¡pidos ou no final da pÃ¡gina -->
 
 <section class="faq">
   <h2 style="color: red;">Perguntas Frequentes</h2>
@@ -167,10 +159,8 @@ include '../includes/header.php';
           <h3>2. É necessário marcar horário ou atendemos sem agendamento?</h3>
           <p>Recomendamos agendamento, mas tambêm atendemos clientes sem marcar, dependendo da disponibilidade.</p>
       </div>
-      <!-- Adicione mais perguntas e respostas conforme necessÃ¡rio -->
   </div>
 </section>
-<!-- Adicione esta seÃ§Ã£o no final da sua pÃ¡gina -->
 
 <section class="newsletter">
   <div class="newsletter-content">
