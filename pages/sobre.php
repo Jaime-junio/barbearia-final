@@ -29,13 +29,18 @@
     <h2 style="color: red; text-align: center; font-size: 30px;">Nossa Equipe</h2>
     <section class="equipe-sobre">
         <div class="equipe-sobre-content">
-            
+
+         <!-- Deixar dinâmico -->
             <div class="membro-equipe">
                 <img src="../assets/img/kleber.jpg" alt="JoÃ£o Silva - Barbeiro Chefe">
                 <h3>Kleber Silva</h3>
                 <p>Barbeiro Chefe</p>
                 <p>Com mais de 10 anos de experiência, Kleber é apaixonado por cortes modernos e sempre busca inovações na área de barbearia.</p>
             </div>
+
+
+
+
             <div class="membro-equipe">
                 <img src="../assets/img/pedro.jpg" alt="Maria Oliveira - Barbeira Especialista">
                 <h3>Pedro Oliveira</h3>
@@ -57,6 +62,8 @@
         <div class="fotos-ambiente-content">
             <h2 style="color: red;">Veja Nossos Ambientes</h2>
             <div class="galeria-fotos">
+
+             <!-- Deixar dinâmico -->
                 <img src="../assets/img/salao1.jpg" alt="Interior da Barbearia">
                 <img src="../assets/img/salao2.jpg" alt="EspaÃ§o Acolhedor">
                 <img src="../assets/img/salao3.jpg" alt="Ãrea de Atendimento">
@@ -88,6 +95,7 @@
     <section class="depoimentos">
         <div class="depoimentos-content">
             
+         <!-- Deixar dinâmico -->
             <div class="depoimento">
                 <p>"Excelente atendimento e profissionais qualificados. Sempre saio satisfeito!"</p>
                 <p style="color: red;">- Cliente Satisfeito 1</p>

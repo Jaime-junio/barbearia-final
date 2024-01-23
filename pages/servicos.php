@@ -10,6 +10,8 @@ include '../includes/header.php';
 
 <main>
 <section class="services-section">
+
+ <!-- Deixar dinâmico -->
   <div class="service-card">
     <img src="../assets/img/corte 1.jpg" alt="Corte de Cabelo">
     <h2>Corte de Cabelo</h2>
@@ -26,15 +28,21 @@ include '../includes/header.php';
 </section>
 <section class="portfolio-section">
   <h2 style="color: red;">Portfólio</h2>
+
   <div class="portfolio-gallery">
-    <img src="../assets/img/corte 6.jpg" alt="Corte de Cabelo 1">
+   <!-- Deixar dinâmico -->
+  <img src="../assets/img/corte 6.jpg" alt="Corte de Cabelo 1">
     <img src="../assets/img/corte 7.jpg" alt="Corte de Cabelo 2">
     <img src="../assets/img/corte 8.jpg" alt="Corte de Cabelo 3">
     <!-- Adicione mais imagens conforme necessário -->
   </div>
 </section>
+
+
 <section class="testimonials-section">
   <h2 style="color: red;">Testemunhos</h2>
+
+ <!-- Deixar dinâmico -->
   <div class="testimonial-card">
     <img src="../assets/img/imagens/cliente.jpg" alt="Cliente 1">
     <p class="testimonial-text">"Serviço excepcional! O corte de cabelo foi exatamente como eu queria. Recomendo totalmente!"</p>
@@ -53,6 +61,8 @@ include '../includes/header.php';
   <p style="font-size: 23px;color: white;">Escolha o melhor horário para você e deixe-nos cuidar do seu visual.</p>
   
   <form class="booking-form">
+
+   <!-- Deixar dinâmico -->
     <label style="font-size: 22px;" for="name">Nome:</label>
     <input type="text" id="name" name="name" placeholder="Seu Nome" required>
 

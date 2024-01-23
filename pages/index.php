@@ -15,9 +15,11 @@ include '../includes/header.php';
 
       <section class="promocoes">
   <div class="promocoes-content">
+    
       <h2 style="color: red;">Promosões Especiais</h2>
       <p style="color: white;">Aproveite nossas ofertas exclusivas para você:</p>
       <ul>
+        <!-- Deixar dinâmico -->
           <li style="color: white;">Desconto de 20% no corte na primeira visita</li>
           <li style="color: white;">Promoção de barba + corte por apenas R$ 50,00</li>
           <!-- Adicione mais promoÃ§Ãµes conforme necessÃ¡rio -->
@@ -29,11 +31,13 @@ include '../includes/header.php';
 <section class="equipe">
   <div class="equipe-content">
       
+    <!-- deixar dinamico  -->
       <div class="barbeiro">
           <img src="../assets/img/kleber.jpg" alt="Barbeiro 1">
           <h3>Kleber Silva</h3>
           <p>Com mais de 10 anos de experiência, especializado em cortes modernos e barbas estilizadas.</p>
       </div>
+
       <div class="barbeiro">
           <img src="../assets/img/pedro.jpg" alt="Barbeiro 2">
           <h3>Pedro Oliveira</h3>
@@ -52,6 +56,8 @@ include '../includes/header.php';
  <div class="container" id="galeria">
   
   <div class="gallery">
+
+   <!-- Deixar dinâmico -->
     <div class="photo">
       <img src="../assets/img/imagens/corte 1.jpg" alt="galeria">
     </div>
@@ -85,11 +91,12 @@ include '../includes/header.php';
   <h2 style="color: red;">Depoimentos</h2>
 <section  class="depoimentos">
     <div class="depoimentos-content">
-        
+         <!-- Deixar dinâmico -->
         <div style="background:rgba(0, 0, 0, 0.6) ;" class="depoimento">
             <p style="color: #fff ;">"Excelente atendimento e cortes impecáveis. Recomendo!"</p>
             <p style="color: red;" class="cliente">- Joâo Silva</p>
         </div>
+
         <div style="background:rgba(0, 0, 0, 0.6) ;"  class="depoimento">
             <p style="color: #fff ;">"A melhor barbearia da região. Sempre saio satisfeito!"</p>
             <p style="color: red;" class="cliente">- Maria Oliveira</p>
@@ -104,12 +111,15 @@ include '../includes/header.php';
 <section class="blog" id="blog">
   <div class="blog-content">
       
+   <!-- Deixar dinâmico -->
       <div class="post">
           <img src="../assets/img/corte 2.jpg" alt="TendÃªncias em Cortes">
           <h3>Tendências em Cortes de Cabelo Masculino</h3>
           <p>Descubra as Ultimas tendências em cortes de cabelo masculino para 2024 e escolha o seu estilo.</p>
           <a href="blog/tendencias-cortes.html">Leia mais</a>
       </div>
+
+
       <div class="post">
           <img style="height: 250px; width: 300px;" src="../assets/img/corte 3.jpg" alt="Cuidados com a Barba">
           <h3>Cuidados Essenciais com a Barba</h3>
@@ -147,11 +157,12 @@ include '../includes/header.php';
 <section class="faq">
   <h2 style="color: red;">Perguntas Frequentes</h2>
   <div class="faq-content">
-  
+   <!-- Deixar dinâmico -->
       <div class="pergunta">
           <h3>1. Quais são os metodos de pagamento aceitos?</h3>
           <p>Aceitamos pagamentos em dinheiro, cartões de credito e debito.</p>
       </div>
+      
       <div class="pergunta">
           <h3>2. É necessário marcar horário ou atendemos sem agendamento?</h3>
           <p>Recomendamos agendamento, mas tambêm atendemos clientes sem marcar, dependendo da disponibilidade.</p>
