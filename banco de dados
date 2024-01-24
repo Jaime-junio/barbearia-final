@@ -66,7 +66,7 @@ CREATE TABLE imagens(
 ---------------------------------------------------------------------------------------------
 -- inserindo usuario em barbeiros 
 INSERT INTO usuarios (nome, email, senha, nivel) VALUES ('Gustavo', 'gustavobarbeiro@gmail.com', SHA2('12345678', 256), 'barbeiro');
-INSERT INTO barbeiros (id_usuario, especialidade, foto) VALUES (1, 'Pinturas de cabelos e barbas', 'gustavo.jpg');
+INSERT INTO barbeiros (i d_usuario, especialidade, foto) VALUES (1, 'Pinturas de cabelos e barbas', 'gustavo.jpg');
 
 INSERT INTO usuarios (nome, email, senha, nivel) VALUES ('Kleber', 'kleberbarbeiro@gmail.com', SHA2('12345678', 256), 'barbeiro');
 INSERT INTO barbeiros (id_usuario, especialidade, foto) VALUES (2, 'Cortes com desenhos e detalhes complexos', 'kleber.jpg');

@@ -27,7 +27,6 @@ include '../includes/header.php';
                 <tr>
                     <th>Nome</th>
                     <th>Email</th>
-                    <th>Telefone</th>
                     <th>Especialidade</th>
                     <th>Disponibilidade</th>
                     <th>Ações</th>
@@ -42,7 +41,6 @@ include '../includes/header.php';
                     <tr>
                         <td><?php echo $row['nome']; ?></td>
                         <td><?php echo $row['email']; ?></td>
-                        <td><?php echo $row['telefone']; ?></td>
                         <td><?php echo $row['especialidade']; ?></td>
                         <td style="text-align: center; "><?php echo $status; ?></td>
                         <td>
