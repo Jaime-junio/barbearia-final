@@ -44,17 +44,19 @@
   </header>
   
 <div id="loginForm" style="display:none;">
-<form method="post" action="#>
-        <!-- Seu formulário de login aqui -->
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <br>
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password">
-        <br>
-        <button>Login</button>
-        </form>
-    </div>
+  <form method="post" action="../config/action_login.php">
+          <!-- Seu formulário de login aqui -->
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <br>
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password">
+          <br>
+          <input type="submit" value="Logar" name="logar">
+
+
+  </form>
+</div>
 
 
 <script>

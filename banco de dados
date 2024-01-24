@@ -52,6 +52,17 @@ CREATE TABLE agendamentos (
     situacao ENUM('pago', 'pendente', 'cancelado') NOT NULL DEFAULT 'pendente',
     FOREIGN KEY (id_barbeiro) REFERENCES barbeiros(id_barbeiro)
 );
+
+CREATE TABLE imagens(
+    INT PRIMARY KEY AUTO_INCREMENT,
+    barbeiros VARCHAR(255), --2x
+    galeria VARCHAR(255),
+    blogs VARCHAR(255),
+    cortes VARCHAR(255),
+    portfolio VARCHAR(255),
+    testemunhos VARCHAR(255),
+    ambientes VARCHAR(255)
+);
 ---------------------------------------------------------------------------------------------
 -- inserindo usuario em barbeiros 
 INSERT INTO usuarios (nome, email, senha, nivel) VALUES ('Gustavo', 'gustavobarbeiro@gmail.com', SHA2('12345678', 256), 'barbeiro');
@@ -94,13 +105,3 @@ INSERT INTO servicos (titulo, preco, paragrafo) VALUES ("Dia do Noivo", 80.00, "
 -- nossos ambientes
 
 
-CREATE TABLE imagens(
-    INT PRIMARY KEY AUTO_INCREMENT,
-    barbeiros VARCHAR(255), --2x
-    galeria VARCHAR(255),
-    blogs VARCHAR(255),
-    cortes VARCHAR(255),
-    portfolio VARCHAR(255),
-    testemunhos VARCHAR(255),
-    ambientes VARCHAR(255)
-);

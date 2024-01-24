@@ -52,6 +52,7 @@ include '../includes/header.php';
     <p class="testimonial-text">"Atendimento de alta qualidade. Sempre saio satisfeito com o cuidado e profissionalismo."</p>
     <p class="client-name">- André Oliveira</p>
   </div>
+  
 </section>
 <section class="booking-section" id="agendamento">
   <h2 style="color: red; font-size: 30px;">Agende um Horário</h2>
