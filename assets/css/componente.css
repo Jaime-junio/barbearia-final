@@ -52,24 +52,24 @@
 
 .agd{
   min-height: 200px;
-  width: 400px;
+  width: 600px;
 }
 
 .agd a{
   text-decoration: none;
-    padding: 13px;
-    border-radius: 30px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    color: #cd3232;
-    margin-left: 40%;
-    border: 2px solid #cd3232;
-    background: linear-gradient(to bottom,rgba(0,0,0,0.9)0%, rgba(0,0,0,0.4)100%);
+  padding: 13px;
+  border-radius: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #cd3232;
+  margin-left: 50%;
+  border: 2px solid #cd3232;
+  background: linear-gradient(to bottom,rgba(0,0,0,0.9)0%, rgba(0,0,0,0.4)100%);
 
 }
 
 .agd a:hover{
   box-shadow: #000 0px 0px 15px 10px;
-    color: #fefefe
+  color: #fefefe
 }
