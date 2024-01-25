@@ -35,3 +35,11 @@
   background-color: rgb(99, 10, 10);
   transform: scale(1.2);
 }
+
+
+
+.catalogo h5{
+  color: red;
+  font-size: 22px;
+  margin: 20px;
+}
