@@ -24,7 +24,7 @@
 }
 
 #loginForm button, #loginButtom{
-  margin-top: 20px;
+  margin-top: 30px;
   background-color: red;
   color: bisque;
   transition: 400ms;
@@ -32,6 +32,19 @@
 }
 
 #loginForm button:hover, #loginButtom:hover{
+  background-color: rgb(99, 10, 10);
+  transform: scale(1.2);
+}
+
+#logar-btn{
+  margin-top: 30px;
+  background-color: red;
+  color: bisque;
+  transition: 400ms;
+  border-radius: 20px;
+}
+
+#logar-btn:hover{
   background-color: rgb(99, 10, 10);
   transform: scale(1.2);
 }
