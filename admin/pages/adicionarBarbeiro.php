@@ -20,11 +20,11 @@ include '../includes/header.php';
             <label>Email: </label>
             <input type="email" name="email" required><br>
 
+            <label>Senha: </label>
+            <input type="password" name="senha" required><br>
+
             <label>Especialidade: </label>
             <input type="text" name="especialidade" required><br>
-
-            <label>Telefone: </label>
-            <input type="text" name="telefone" required><br>
 
             <label>STATUS: </label>
 
@@ -33,7 +33,8 @@ include '../includes/header.php';
             <input type="radio" value="0" name="disponibilidade" required>
             <label >inativo</label><br>
 
-            <label>Foto: </label><input type="file" name="foto" accept="image/jpeg"/><br>
+            <label>Foto: </label>
+            <input type="file" name="foto" accept="image/jpeg"/><br>
 
             
             <input class="btn" type="submit" name="adicionar" value="Adicionar">

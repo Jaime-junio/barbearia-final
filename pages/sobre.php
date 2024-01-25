@@ -29,24 +29,30 @@
 
          <!-- Deixar dinâmico -->
          <?php 
-        include_once '../config/connectNew.php';
-        $connection = connectNew();
+            include_once '../config/connectNew.php';
+            $connection = connectNew();
 
-        $sql = "SELECT * FROM usuarios INNER JOIN barbeiros ON usuarios.id = barbeiros.id_usuario;";
-        $result = $connection->query($sql);
-        $connection->close();
+            $sql = "SELECT * FROM usuarios INNER JOIN barbeiros ON usuarios.id = barbeiros.id_usuario;";
+            $result = $connection->query($sql);
+            $connection->close();
 
-        while ($row = $result->fetch_assoc()) {?>
+            while ($row = $result->fetch_assoc()) {
+                $nomeBarbeiro = strtolower($row['nome']);
+                $fotoBarbeiro = $row['foto'];
 
-            <div class="membro-equipe">
-                <img src="../assets/img/<?= strtolower($row['nome'])?>.jpg" alt="JoÃ£o Silva - Barbeiro Chefe">
-                <h3><?= $row['nome'] ?></h3>
-                <p><?php echo ($row['nivel'] == 'administrador') ? 'barbeiro chefe':'barbeiro especialista'; ?></p>
+                // Verifica se a foto existe antes de exibi-la
+                $caminhoFoto = "../assets/img/$fotoBarbeiro";
+                $fotoExistente = file_exists($caminhoFoto) ? $caminhoFoto : "../assets/img/placeholder.jpg";
+            ?>
 
-                <p><?= $row['especialidade'] ?></p>
-            </div>
-        
-        <?php } ?>
+                <div class="membro-equipe">
+                    <img src="<?= $fotoExistente ?>" alt="<?= $nomeBarbeiro ?>">
+                    <h3><?= $row['nome'] ?></h3>
+                    <p><?php echo ($row['nivel'] == 'administrador') ? 'barbeiro chefe' : 'barbeiro especialista'; ?></p>
+                    <p><?= $row['especialidade'] ?></p>
+                </div>
+
+            <?php } ?>
             
         </div>
     </section>

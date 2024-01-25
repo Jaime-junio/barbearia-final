@@ -16,7 +16,7 @@ include '../includes/header.php';
 <section class="promocoes">
   <div class="promocoes-content">
     
-      <h2 style="color: red;">Promosões Especiais</h2>
+      <h2 style="color: red;">Promoções Especiais</h2>
       <p style="color: white;">Aproveite nossas ofertas exclusivas para você:</p>
       <ul>
         <!-- Deixar dinâmico -->

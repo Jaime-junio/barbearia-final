@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['id'])) {
 
     <div class="header">
         <h2>Painel de Controle</h2>
-        <h3>Bem-vindo, <?php echo $_SESSION['email']; ?>! (<a href="../pages/login.php">Sair</a>)</h3>
+        <h3>Bem-vindo, <?php echo $_SESSION['email']; ?>! (<a href="../../pages/index.php">Sair</a>)</h3>
     </div>
     <div class="editar-barbeiro">
         <h2>Editar Serviço</h2>
@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['id'])) {
             <label>Parágrafo: </label>
             <input type="text" name="paragrafo" value="<?php echo $servico['paragrafo']; ?>" required /><br>
 
-            <input class="btn" type="submit" name="editar_servico" value="Editar" />
+            <input class="btn" type="submit" name="editar" value="Editar" />
         </form>
     </div>
 </body>
