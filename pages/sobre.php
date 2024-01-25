@@ -28,28 +28,26 @@
         <div class="equipe-sobre-content">
 
          <!-- Deixar dinâmico -->
+         <?php 
+        include_once '../config/connectNew.php';
+        $connection = connectNew();
+
+        $sql = "SELECT * FROM usuarios INNER JOIN barbeiros ON usuarios.id = barbeiros.id_usuario;";
+        $result = $connection->query($sql);
+        $connection->close();
+
+        while ($row = $result->fetch_assoc()) {?>
+
             <div class="membro-equipe">
-                <img src="../assets/img/kleber.jpg" alt="JoÃ£o Silva - Barbeiro Chefe">
-                <h3>Kleber Silva</h3>
-                <p>Barbeiro Chefe</p>
-                <p>Com mais de 10 anos de experiência, Kleber é apaixonado por cortes modernos e sempre busca inovações na área de barbearia.</p>
+                <img src="../assets/img/<?= strtolower($row['nome'])?>.jpg" alt="JoÃ£o Silva - Barbeiro Chefe">
+                <h3><?= $row['nome'] ?></h3>
+                <p><?php echo ($row['nivel'] == 'administrador') ? 'barbeiro chefe':'barbeiro especialista'; ?></p>
+
+                <p><?= $row['especialidade'] ?></p>
             </div>
-
-
-
-
-            <div class="membro-equipe">
-                <img src="../assets/img/pedro.jpg" alt="Maria Oliveira - Barbeira Especialista">
-                <h3>Pedro Oliveira</h3>
-                <p>Barbeiro Especialista</p>
-                <p>Pedro é especializado em cortes femininos e masculinos, unindo têcnica e criatividade para proporcionar resultados únicos aos clientes.</p>
-            </div>
-            <div class="membro-equipe">
-                <img src="../assets/img/gustavo.jpg" alt="Maria Oliveira - Barbeira Especialista">
-                <h3>Gustavo Freitas</h3>
-                <p>Barbeiro Especialista</p>
-                <p>Gustavo é especializado em costes afros,com mais de 7 anos de experiência</p>
-            </div>
+        
+        <?php } ?>
+            
         </div>
     </section>
     

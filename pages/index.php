@@ -13,7 +13,7 @@ include '../includes/header.php';
     <p> A melhor Franquia do Município de Nova Iguaçu,
       explore o nosso site e veja um pouco mais do nosso trabalho</p>
 
-      <section class="promocoes">
+<section class="promocoes">
   <div class="promocoes-content">
     
       <h2 style="color: red;">Promosões Especiais</h2>
@@ -116,14 +116,12 @@ include '../includes/header.php';
           <a href="blog/tendencias-cortes.html">Leia mais</a>
       </div>
 
-
       <div class="post">
           <img style="height: 250px; width: 300px;" src="../assets/img/corte 3.jpg" alt="Cuidados com a Barba">
           <h3>Cuidados Essenciais com a Barba</h3>
           <p>Saiba como manter sua barba impecável com dicas simples e eficazes de cuidados diários.</p>
           <a href="blog/cuidados-barba.html">Leia mais</a>
       </div>
-      <!-- Adicione mais posts conforme necessÃ¡rio -->
   </div>
 </section>
 
