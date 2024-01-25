@@ -52,7 +52,7 @@
           <label for="password">Senha:</label>
           <input type="password" id="password" name="password">
           <br>
-          <input type="submit" value="Logar" name="logar">
+          <input id="logar-btn" type="submit" value="Logar" name="logar">
 
 
   </form>

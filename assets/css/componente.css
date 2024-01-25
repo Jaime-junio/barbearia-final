@@ -24,7 +24,7 @@
 }
 
 #loginForm button, #loginButtom{
-  margin-top: 20px;
+  margin-top: 30px;
   background-color: red;
   color: bisque;
   transition: 400ms;
@@ -34,4 +34,56 @@
 #loginForm button:hover, #loginButtom:hover{
   background-color: rgb(99, 10, 10);
   transform: scale(1.2);
+}
+
+#logar-btn{
+  margin-top: 30px;
+  background-color: red;
+  color: bisque;
+  transition: 400ms;
+  border-radius: 20px;
+}
+
+#logar-btn:hover{
+  background-color: rgb(99, 10, 10);
+  transform: scale(1.2);
+}
+
+
+
+.catalogo h5{
+  color: red;
+  font-size: 22px;
+  margin: 20px;
+}
+
+.catalogo p{
+  color: red;
+}
+
+
+
+.agd{
+  margin-left: 21%;
+  min-height: 200px;
+  width: 600px;
+}
+
+.agd a{
+  text-decoration: none;
+  padding: 13px;
+  border-radius: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #cd3232;
+  margin-left: 50%;
+  border: 2px solid #cd3232;
+  background: linear-gradient(to bottom,rgba(0,0,0,0.9)0%, rgba(0,0,0,0.4)100%);
+
+}
+
+.agd a:hover{
+  box-shadow: #000 0px 0px 15px 10px;
+  color: #fefefe
 }
