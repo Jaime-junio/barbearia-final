@@ -34,9 +34,6 @@
             <li class="nav-item menu-space-1">
               <a class="nav-link" href="./sobre.php">Sobre a Franquia</a>
             </li>
-            <li class="nav-item menu-space-1">
-              <a class="nav-link" href="#agendamento">Agendamento</a>
-            </li>
             <li class="nav-item menu-space-2">
               <button id="loginButtom" onclick="toggleLogin()">  Login</button>
             </li>
