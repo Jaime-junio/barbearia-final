@@ -216,8 +216,8 @@ table {
     margin-top: 80px;
     margin-left: 30%;
     background: linear-gradient(to bottom,rgba(0,0,0,0.9)0%, rgba(0,0,0,0)100%);
-    width: 900px;
-    height: 700px;
+    width: 640px;
+    height: 800px;
     border-radius: 30px;
     border: 2px solid black;
     box-shadow: 0 0 12px 5px red;
